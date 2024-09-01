@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indigo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-upper">
+          <div class="navbar-upper-bar">
+            <a class="bar" href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="navbar-logo">
+              <a class="logo" href="#"></a>
+            </div>
+          </div>
+
+          <div class="navbar-upper-empty"></div>
+
+          <div class="navbar-upper-options">
+            <div class="navbar-upper-options-hotel">
+              <a
+                class="navbar-hotel-book"
+                href="https://www.goindigo.in/hotels?linkNav=BookHotels%7C%7CHeader%20Menu"
+                target="_blank"
+                >Book Hotels</a
+              >
+            </div>
+
+            <div class="dropdown navbar-book dropdown-book">
+              <button class="dropbtn">Book</button>
+              <div class="dropdown-content">
+                <a
+                  href="https://www.goindigo.in/flight-booking.html?linkNav=Flights%7CBook%7CHeader%20Menu"
+                  >Flights</a
+                >
+                <a
+                  href="https://groupbooking.goindigo.in/UI/DirectPassenger/CreateBooking.aspx?linkNav=Group-Bookings_Header~Book"
+                  target="_blank"
+                  >Group Bookings</a
+                >
+                <a
+                  href="https://www.goindigo.in/hotels?linkNav=BookHotels%7CBook%7C%7CHeaderMenu"
+                  target="_blank"
+                  >Hotels</a
+                >
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div class="navbar-check-in navbar-box57">
+              <a
+                href="https://www.goindigo.in/web-check-in.html?linkNav=Check-in%7C%7CHeader%20Menu"
+                class="box57"
+                >Check-in</a
+              >
+            </div>
+
+            <div class="dropdown navbar-manage">
+              <button class="dropbtn">Manage</button>
+              <div class="dropdown-content">
+                <a
+                  href="https://www.goindigo.in/edit-booking.html?linkNav=Edit%20Booking%7CManage%7CHeader%20Menu"
+                  >Edit Booking</a
+                >
+                <a
+                  href="https://www.goindigo.in/change-flight.html?linkNav=Change%20Flight%7CManage%7CHeader%20Menu"
+                  >Change Flight</a
+                >
+                <a
+                  href="https://www.goindigo.in/plan-b.html?linkNav=Plan%20B%7CManage%7CHeader%20Menu"
+                  >Plan B</a
+                >
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div class="navbar-reward navbar-box57">
+              <a
+                href="https://www.goindigo.in/6e-rewards.html?linkNav=6E%20Rewards%7C%7CHeader%20Menu"
+                class="box57"
+                >6E Rewards</a
+              >
+            </div>
+
+            <div class="dropdown navbar-info">
+              <button class="dropbtn">Info</button>
+              <div class="dropdown-content">
+                <a
+                  href="https://www.goindigo.in/check-flight-status.html?linkNav=Flight%20Status%7CInfo%7CHeader%20Menu"
+                  >Flight Status</a
+                >
+                <a
+                  href="https://www.goindigo.in/information/conditions-of-carriage.html?linkNav=Conditions%20of%20Carriage%7CInfo%7CHeader%20Menu"
+                  >Conditions of Carriage</a
+                >
+                <a
+                  href="https://www.goindigo.in/destinations.html?linkNav=Destinations%7CInfo%7CHeader%20Menu"
+                  >Destinations</a
+                >
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div class="dropdown navbar-login">
+              <button class="dropbtn">Login</button>
+              <div class="dropdown-content">
+                <a href="https://www.goindigo.in/">Customer Login</a>
+                <a
+                  href="https://www.goindigo.in/agent.html?linkNav=Partner%20Login%7CLogin%7CHeader%20Menu"
+                  >Partner Login</a
+                >
+                <a
+                  href="https://www.goindigo.in/corp-admin.html?linkNav=SME%20Login%7CLogin%7CHeader%20Menu"
+                  >SME login</a
+                >
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-lower">
+          <div class="navbar-lower-upper">
+            <button class="navbar-ways navbar-lower-button">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p>One Way</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <button class="navbar-pax navbar-lower-button">
+              <i class="fa-regular fa-user"></i>
+              <p>1 Pax</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="navbar-promo navbar-lower-button">
+              <span>
+                <a href="#">Use promo code</a>
+              </span>
+            </div>
+            <div class="navbar-lower-emptyspace navbar-lower-button"></div>
+            <button class="navbar-currency navbar-lower-button">
+              <p>Indian Rupee</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+          </div>
+
+          <div class="navbar-lower-lower">
+            <input placeholder="From" class="navbar-lower-lower-input" />
+            <i class="fa-solid fa-right-left"></i>
+            <input placeholder="To" class="navbar-lower-lower-input" />
+            <div class="navbar-lower-lower-calender">
+              <div class="navbar-label">
+                <label>Travel Dates</label>
+              </div>
+              <i class="fa-regular fa-calendar"></i>
+              <input type="date" style="border: none" />
+            </div>
+
+            <button class="navbar-search-flight">
+              <span>Search Flight</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Saudi_hp.webp" style="width: 100%" />
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="summer.avif" style="width: 100%" />
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Bali_HP.png" style="width: 100%" />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <h1>offers</h1>
+      <br />
+      <br />
+
+      <div class="container">
+        <div class="block">
+          <div>
+            <br />
+            <h4>GET UPTO INR 300</h4>
+            <br />
+            <p>cashback using wallet</p>
+            <br />
+          </div>
+          <div class="l1">
+            <img src="we.jpg" width="96rem" height="40rem" />
+            <br />
+            <br />
+            <p1>EXPIRES:31/07/24</p1>
+          </div>
+        </div>
+
+        <div class="block">
+          <div>
+            <br />
+            <h4>GET UPTO 10% OFF</h4>
+            <br />
+            <p>on indigo app booking</p>
+            <br />
+          </div>
+          <div class="l1">
+            <img src="ip.png" width="96rem" height="40rem" />
+            <br />
+            <br />
+            <p2><b>NO expiry</b> </p2>
+          </div>
+        </div>
+
+        <div class="block">
+          <div>
+            <br />
+            <h4>UPTO 6% 6E REWARDS</h4>
+            <br />
+            <p>using 6e rewards co-brand card</p>
+            <br />
+          </div>
+          <div class="l1">
+            <img src="6.png" width="96rem" height="40rem" />
+            <br />
+            <br />
+            <p2><b>NO expiry</b> </p2>
+          </div>
+        </div>
+
+        <div class="block">
+          <div>
+            <br />
+            <h4>UPTO 40% OFF</h4>
+            <br />
+            <p>book through 6e treats</p>
+            <br />
+          </div>
+          <div class="l1">
+            <img src="b6.png" width="96" height="40rem" />
+            <br />
+            <br />
+            <p2><b>NO expiry</b> </p2>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>6E SERVICES</h2>
+      <br /><br />
+      <nav class="navbar12">
+        <a href="#" class="nav-button">FOOD & BEVERAGE</a>
+        <a href="#" class="nav-button">BAGGAGE</a>
+        <a href="#" class="nav-button">COMBO</a>
+        <a href="#" class="nav-button">AIRPORT SERVICE</a>
+        <a href="#" class="nav-button">TRIP ASSURANCE</a>
+        <a href="#" class="nav-button">DISCOVER MORE</a>
+      </nav>
+      <br /><br />
+
+      <div class="container1">
+        <div class="daba">
+          <div class="l2">
+            <img src="b3a.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <h4>EXCESS BAGGAGE/ ADDITIONAL PIECE</h4>
+            <br />
+            <p>pre book in excess check in baggage and ave upto 20%</p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b3b.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <h4>DELAYED AND LOST BAGGADE PRODUCTION</h4>
+            <br />
+            <p>get compensation if your baggage is delayed or lost</p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b3c.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <h4>SPORTS EUPIMENT</h4>
+            <br />
+            <p>pre book your sports equipment to enjoy a clean journey</p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b3d.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <h4>carter porter</h4>
+            <br />
+            <p>
+              enjoy convienent doorstep baggage transfer from deparure to
+              arrival
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2>GET INSPIRED</h2>
+      <br />
+      <br />
+      <div class="container1">
+        <div class="daba">
+          <div class="l2">
+            <img src="b5.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <h4>SUMMER VACAY</h4>
+            <br />
+            <p>
+              suu is out,fun's in.this is your guide to do everything whatever
+              yu ant to do
+            </p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b5b.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <h4>BEACH HOLIDAY</h4>
+            <br />
+            <p>let the waves across the world wash over you</p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b5c.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <h4>TRAVEL WANDERLUST</h4>
+            <br />
+            <p>
+              travel on your next destination based on what u like and how u
+              feel
+            </p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b5f.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <h4>ROMANTIC GATEWAY</h4>
+            <br />
+            <p>
+              whatever your idea of romance maybe,we have a gateway to match
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2>INDIGO NEWS</h2>
+      <br />
+      <br />
+      <div class="container1">
+        <div class="daba">
+          <div class="l2">
+            <img src="b6.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <p>
+              <br />
+              indigo annouces new fligt connectives to north goao ,nagpur and
+              Chhatrapati Sambhajinagar (Aurangabad),boosting regional tourism
+            </p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b6B.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <p>
+              <br />
+              indigo reported its fourth quarter and fiscal year 2024 results
+            </p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b6C.avif" width="245rem" height="180.25rem" />
+          </div>
+          <br />
+
+          <div>
+            <br />
+            <p>indigo to launch a tailor-made business product</p>
+          </div>
+        </div>
+
+        <div class="daba">
+          <div class="l2">
+            <img src="b6F.avif" width="245rem" height="180rem" />
+          </div>
+          <br />
+
+          <div>
+            <p>
+              <br />
+              Enhancing regional connectivity, indigo announces direct flights
+              between Bengaluru and Deoghar
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- block 6 -->
+    </main>
+    <div class="lower-section">
+      <div class="foot-panel1">
+        <div class="foot-panel1-content">
+          <div class="foot-panel1-box">
+            <h1 class="foot-panel1-heading">Why choose indigo</h1>
+            <p class="foot-panel1-paragraph">
+              When you
+              <u
+                ><a
+                  href="https://www.goindigo.in/flight-booking.html?linkNav=flight-booking%7C%7CFAQ"
+                  target="_blank"
+                  >book flight with IndiGo</a
+                ></u
+              >, you fly on-time, every time, daily, and non-stop. Get the
+              lowest booking and cancellation fee, exclusive offers, add-ons and
+              in-flight services that make your journey hassle-free. Now, you
+              can
+              <u
+                ><a
+                  href="https://www.goindigo.in/information/mobile.html?linkNav=download-mobile-app%7C%7CFAQ"
+                  target="_blank"
+                  >download the app</a
+                ></u
+              >
+              and travel on the go, with IndiGo.
+            </p>
+          </div>
+          <div class="foot-panel1-box">
+            <h1 class="foot-panel1-heading">indigo and abroad</h1>
+            <p class="foot-panel1-paragraph">
+              Choose from over 80+
+              <u
+                ><a
+                  href="https://www.goindigo.in/domestic-flights.html?linkNav=domestic-flights%7C%7CFAQ"
+                  target="_blank"
+                  >domestic</a
+                ></u
+              >, and 30+
+              <u
+                ><a
+                  href="https://www.goindigo.in/international-flights.html?linkNav=international-flights%7C%7CFAQ"
+                  target="_blank"
+                  >international</a
+                ></u
+              >
+              destinations when you book with IndiGo. Enjoy the 6E experience
+              when you fly across the world with our 7 codeshare partners - from
+              France to Australia, and beyond. Book your preferred flight on our
+              website and let us fly you across India and the world.
+            </p>
+          </div>
+          <div class="foot-panel1-box">
+            <h1 class="foot-panel1-heading">The complete 6E experience</h1>
+            <p class="foot-panel1-paragraph">
+              With IndiGo, you fly hassle-free, from beginning to end, when you
+              <u
+                ><a
+                  href="https://www.goindigo.in/add-on-services.html?linkNav=add-on-services%7C%7CFAQ"
+                  >pre-book our 6E Services</a
+                ></u
+              >. From priority check-in and anytime boarding, to complimentary
+              snacks and doorstep baggage delivery – you can personalise your
+              journey, every step of the way, when you say ‘Let’s IndiGo’.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-panel2">
+        <div class="foot-panel2-alert-message">
+          <div class="alert-message-logo">
+            <div class="alert-message-image"></div>
+            <div class="alert-message-text">INDIGO ALERTS</div>
+          </div>
+          <div class="alert-message-content">
+            Passenger travelling to India from foriegn countries, and those
+            travelling with in India are not allowed to carry satellite phones
+            without permission from the Department of Telecommunications.
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-panel3">
+        <div class="foot-panel3-daily-flights foot-panel3-box">
+          <imag
+            class="foot-panel3-box-img"
+            style="background-image: url('airplane.webp')"
+          ></imag>
+          <p>2000+ Daily flights</p>
+        </div>
+        <div class="foot-panel3-domestic foot-panel3-box">
+          <imag
+            class="foot-panel3-box-img"
+            style="background-image: url('india_map.webp')"
+          ></imag>
+          <p>80+ Domestic Destinations</p>
+        </div>
+        <div class="foot-panel3-international foot-panel3-box">
+          <i class="fa-solid fa-earth-asia"></i>
+          <p>30+ International Destinations</p>
+        </div>
+        <div class="foot-panel3-happy-passenger foot-panel3-box">
+          <i class="fa-solid fa-person-walking-luggage"></i>
+          <p>500 Mn+ happy passengers</p>
+        </div>
+        <div class="foot-panel3-fleet-strong foot-panel3-box">
+          <i class="fa-solid fa-jet-fighter-up"></i>
+          <p>300+ Fleet strong</p>
+        </div>
+      </div>
+
+      <div class="foot-panel4">
+        <div class="foot-panel4-container-links">
+          <div class="foot-panel4-box1 foot-panel4-box">
+            <h3>Get to Know Us</h3>
+            <ul>
+              <a
+                href="https://www.goindigo.in/about-us.html?linkNav=About%20us%7CGet%20to%20Know%20Us%7CFooter"
+                >About us</a
+              >
+              <a
+                href="https://www.goindigo.in/information/indigo-green.html?linkNav=IndiGo%20Green%20%E2%80%93%20ESG%20report%7CGet%20to%20Know%20Us%7CFooter"
+                >IndiGo Green – ESG report</a
+              >
+              <a
+                href="https://www.goindigo.in/csr.html?linkNav=IndiGoReach%20-%20Our%20CSR%20initiatives%7CGet%20to%20Know%20Us%7CFooter"
+                >IndiGoReach - Our CSR initiatives</a
+              >
+              <a
+                href="https://www.goindigo.in/campaigns/hello-6e.html?linkNav=Hello%206E%20Magazine%7CGet%20to%20Know%20Us%7CFooter"
+                >Hello 6E Magazine</a
+              >
+              <a
+                href="https://www.goindigo.in/about-us/board-of-directors.html?linkNav=Board%20of%20Directors%7CGet%20to%20Know%20Us%7CFooter"
+                >Board of Directors</a
+              >
+              <a
+                href="https://www.goindigo.in/about-us/leadership-team.html?linkNav=Leadership%20Team%7CGet%20to%20Know%20Us%7CFooter"
+                >Leadership Team</a
+              >
+              <a
+                href="https://www.goindigo.in/information/investor-relations.html?linkNav=Investor%20Relations%7CGet%20to%20Know%20Us%7CFooter"
+                >Investor Relations</a
+              >
+              <a
+                href="https://www.goindigo.in/press-releases.html?linkNav=Press%20Releases%7CGet%20to%20Know%20Us%7CFooter"
+                >Press Releases</a
+              >
+              <a
+                href="https://www.goindigo.in/information/inter-globe-enterprises.html?linkNav=InterGlobe%20Enterprises%7CGet%20to%20Know%20Us%7CFooter"
+                >InterGlobe Enterprises</a
+              >
+              <a
+                href="https://www.goindigo.in/information/equal-opportunity-policy.html?linkNav=RPWD%20-%20Equal%20Opportunity%20Policy%7CGet%20to%20Know%20Us%7CFooter"
+                >RPWD - Equal Opportunity Policy</a
+              >
+              <a
+                href="https://www.goindigo.in/information/transgender-person-policy.html?linkNav=Transgender%20Persons%20Policy%7CGet%20to%20Know%20Us%7CFooter"
+                >Transgender Persons Policy</a
+              >
+              <a
+                href="https://www.goindigo.in/information/hiv-aids-workplace-policy.html?linkNav=HIV%2FAIDS%20workplace%20policy%7CGet%20to%20Know%20Us%7CFooter"
+                >HIV/AIDS workplace policy</a
+              >
+              <a
+                href="https://www.goindigo.in/about-us/awards.html?linkNav=Our%20Awards%7CGet%20to%20Know%20Us%7CFooter"
+                >Our Awards</a
+              >
+              <a
+                href="https://www.goindigo.in/aircraft-and-fleet.html?linkNav=Seat%2FAircraft%20information%7CGet%20to%20Know%20Us%7CFooter"
+                >Seat/Aircraft information</a
+              >
+            </ul>
+          </div>
+          <div class="foot-panel4-box2 foot-panel4-box">
+            <h3>Services</h3>
+            <ul>
+              <a
+                href="https://www.goindigo.in/plan-b.html?linkNav=Plan%20B%7CServices%7CFooter"
+                target="_blank"
+                >Plan B</a
+              >
+              <a
+                href="https://www.goindigo.in/information/special-disability-assistance.html?linkNav=Special%2FDisability%20Assistance%7CServices%7CFooter"
+                >Special/Disability Assistance</a
+              >
+              <a
+                href="https://www.goindigo.in/content/dam/skyplus6e/in/en/assets/global/documents/MedicalPassenger-TravelGuideline.pdf?linkNav=Medical%20Assistance%7CServices%7CFooter"
+                >Medical Assistance</a
+              >
+              <a
+                href="https://www.goindigo.in/add-on-services/seat-plus.html?linkNav=Seat%20Select%7CServices%7CFooter"
+                >Seat Select</a
+              >
+              <a
+                href="https://www.goindigo.in/add-on-services/food-menu.html?linkNav=6E%20Eats%7CServices%7CFooter"
+                >6E Eats</a
+              >
+              <a
+                href="https://www.goindigo.in/add-on-services.html?linkNav=Add-ons%20%26%20Services%7CServices%7CFooter"
+                >Add-ons & Services</a
+              >
+              <a
+                href="https://www.goindigo.in/baggage.html?linkNav=Baggage%7CServices%7CFooter"
+                >Baggage</a
+              >
+              <a
+                href="https://www.goindigo.in/initiate-refund.html?linkNav=Refund%20Claim%7CServices%7CFooter"
+                >Refund Claim</a
+              >
+              <a
+                href="https://www.goindigo.in/charters.html?linkNav=Charter%20Services%7CServices%7CFooter"
+                >Charter Services</a
+              >
+              <a
+                href="https://www.goindigo.in/hotels?linkNav=BookHotels%7C%7Cfooter"
+                >Hotels</a
+              >
+            </ul>
+          </div>
+          <div class="foot-panel4-box3 foot-panel4-box">
+            <h3>Quick links</h3>
+            <ul>
+              <a
+                href="https://www.goindigo.in/campaigns/indigo-offers.html?linkNav=Offers%7CQuick%20links%7CFooter"
+                >Offers</a
+              >
+              <a
+                href="https://careers.goindigo.in/?linkNav=careers_footer"
+                target="_blank"
+                >Careers</a
+              >
+              <a
+                href="https://www.goindigo.in/contact-us/query-form-alliances.html?linkNav=Advertise%20with%20us%7CQuick%20links%7CFooter"
+                >Advertise with us</a
+              >
+              <a
+                href="https://www.goindigo.in/sitemap.html?linkNav=Sitemap%7CQuick%20links%7CFooter"
+                >Sitemap</a
+              >
+              <a
+                href="https://www.goindigo.in/destinations.html?linkNav=Destinations%7CQuick%20links%7CFooter"
+                >Destinations</a
+              >
+              <a
+                href="https://www.goindigo.in/get-inspired.html?linkNav=Blogs%7CQuick%20links%7CFooter"
+                >Blogs</a
+              >
+              <a
+                href="https://www.goindigo.in/information/terms-and-conditions.html?linkNav=Terms%20and%20Conditions%7CQuick%20links%7CFooter"
+                >Terms and Conditions</a
+              >
+              <a
+                href="https://www.goindigo.in/information/conditions-of-carriage.html?linkNav=Conditions%20of%20Carriage%7CQuick%20links%7CFooter"
+                >Conditions of Carriage</a
+              >
+              <a
+                href="https://www.goindigo.in/information/privacy.html?linkNav=Privacy%20Policy%7CQuick%20links%7CFooter"
+                >Privacy Policy</a
+              >
+              <a
+                href="https://www.goindigo.in/information/disclaimer.html?linkNav=Disclaimer%7CQuick%20links%7CFooter"
+                >Disclaimer</a
+              >
+              <a
+                href="https://www.goindigo.in/information/useful-tips-for-your-international-flight.html?linkNav=International%20Travel%20Tips%7CQuick%20links%7CFooter"
+                >International Travel Tips</a
+              >
+              <a
+                href="https://www.goindigo.in/web-check-in.html?linkNav=Web%20check-in%20Advisory%7CQuick%20links%7CFooter"
+                >Web check-in Advisory</a
+              >
+              <a
+                href="https://www.goindigo.in/content/dam/skyplus6e/in/en/assets/global/documents/IndiGo-Tariff-Sheet-2024-05-28.pdf?linkNav=Tariff%20Sheet%20%7CQuick%20links%7CFooter"
+                target="_blank"
+                >Tariff Sheet</a
+              >
+              <a
+                href="https://www.goindigo.in/information/purchase-requirement.html?linkNav=Purchase%20Requirement%7CQuick%20links%7CFooter"
+                >Purchase Requirement</a
+              >
+            </ul>
+          </div>
+        </div>
+        <div class="foot-panel4-social-links foot-panel4-box">
+          <h3>Social</h3>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/goindigo.in?linkNav=goindigo_www.goindigo.in~footer"
+              class="social-icons-logo"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+
+            <a
+              href="https://twitter.com/IndiGo6E?linkNav=home_www.goindigo.in%7Efooter"
+              class="social-icons-logo"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/indigo.6e/?linkNav=home_www.goindigo.in~footer"
+              class="social-icons-logo"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+
+            <a
+              href="https://www.linkedin.com/company/indigo-airlines/"
+              class="social-icons-logo"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+
+            <a
+              href="https://www.tripadvisor.in/Profile/IndiGo6E"
+              class="social-icons-logo"
+              ><img src="Tripadvisor.png"
+            /></a>
+          </div>
+          <div class="social-icon-box">
+            <a
+              href="https://www.goindigo.in/whatsapp-support.html?linkNav=Whatsapp%7CSocial%7CFooter"
+              class="social-icon-image"
+              target="_blank"
+              ><img src="whatsapp.png" alt="whatsapp" loading="lazy"
+            /></a>
+          </div>
+          <h3>Download</h3>
+          <div class="social-icon-box foot-panel4-download-box">
+            <a
+              href="https://play.google.com/store/apps/details?id=in.goindigo.android&hl=en&linkNav=details"
+              class="social-icon-image"
+              target="_blank"
+              ><img src="android.svg" alt="Google Playstore" loading="lazy"
+            /></a>
+          </div>
+          <div class="social-icon-box foot-panel4-download-box">
+            <a
+              href="https://apps.apple.com/us/app/indigo-flight-ticket-app/id726070762?linkNav=home_www.goindigo.in%7Efooter&ls=1"
+              class="social-icon-image"
+              target="_blank"
+              ><img src="Apple.svg" alt="App Store" loading="lazy"
+            /></a>
+          </div>
+          <h3>Our Awards</h3>
+          <div class="social-icon-box">
+            <a
+              href="https://www.goindigo.in/about-us/awards.html?linkNav=Best%20Low%20Cost%20Award%7COur%20Awards%7CFooter"
+              class="social-icon-image"
+              target="_blank"
+              ><img src="award_new1.avif" alt="award1" loading="lazy"
+            /></a>
+          </div>
+          <div class="social-icon-box">
+            <a
+              href="https://www.goindigo.in/about-us/awards.html?linkNav=Best%20Low%20Cost%20Award%7COur%20Awards%7CFooter"
+              class="social-icon-image"
+              target="_blank"
+              ><img src="award_new2.avif" alt="award2" loading="lazy"
+            /></a>
+          </div>
+          <div class="social-icon-box">
+            <a
+              href="https://www.goindigo.in/about-us/awards.html?linkNav=Passenger%20Choice%20Award%7COur%20Awards%7CFooter"
+              class="social-icon-image"
+              target="_blank"
+              ><img src="award_new3.avif" alt="award3" loading="lazy"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <img src="download.png" />
+        <p>Ⓒ Copyright 2024 IndiGo. All rights reserved.</p>
+      </div>
+    </div>
+    <script src="src.js"></script>
+  </body>
+</html>
